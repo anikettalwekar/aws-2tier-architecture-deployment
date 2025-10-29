@@ -1,0 +1,63 @@
+<?php
+include 'config.php';
+session_start();
+
+if (!isset($_SESSION['user'])) {
+    header("Location: login.php");
+    exit();
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+    <style>
+        body {
+            background: url('437238.jpg') no-repeat center center;
+            background-size: cover;
+            background-color: purple;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .welcome-container {
+            background-color: rgba(0,0,0,0.5);
+            padding: 50px;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            width: 500px;
+            color: white;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            line-height: 1.8;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: white;
+            color: purple;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a:hover { background-color: #ddd; }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        WELCOME TO MY AWS 3 TIER ARCHITECTURE<br>
+        CREATED BY ANIKET TALWEKAR
+        <br><a href="logout.php">Logout</a>
+    </div>
+</body>
+</html>

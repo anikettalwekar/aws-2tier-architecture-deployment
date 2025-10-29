@@ -1,0 +1,6 @@
+<?php
+$db_host = 'projectdb.chqgmquq8ref.ap-south-1.rds.amazonaws.com';
+$db_user = 'admin';
+$db_pass = 'aniket12345';
+$db_name = 'mydb';
+?>

@@ -1,0 +1,59 @@
+<?php
+session_start();
+session_destroy();
+header("Location: login.php");
+exit();
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logout</title>
+    <style>
+        body {
+            background: url('437238.jpg') no-repeat center center;
+            background-size: cover;
+            background-color: purple;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .logout-container {
+            background-color: rgba(0,0,0,0.5);
+            padding: 50px;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            width: 500px;
+            color: white;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            line-height: 1.8;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: white;
+            color: purple;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a:hover { background-color: #ddd; }
+    </style>
+</head>
+<body>
+    <div class="logout-container">
+        Logout successfully<br>
+        <a href="login.php">Login Again</a>
+    </div>
+</body>
+</html>
